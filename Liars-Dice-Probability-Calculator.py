@@ -51,7 +51,7 @@ for i in range(0,DICE_COUNT+1):
 	for j in range(i,DICE_COUNT+1):
 		ZAI_JIAN_ACCUMULATION[i]['T']=ZAI_JIAN[j]['T']+ZAI_JIAN_ACCUMULATION[i]['T']
 
-print('\n>>>>>>ZAI_JIAN\n',ZAI_JIAN)
+#print('\n>>>>>>ZAI_JIAN\n',ZAI_JIAN)
 print('\n>>>>>>ZAI_JIAN_ACCUMULATION\n',ZAI_JIAN_ACCUMULATION)
 
 #飞，见骰算骰
@@ -65,7 +65,7 @@ for i in range(0,DICE_COUNT+1):
 	for j in range(i,DICE_COUNT+1):
 		FEI_JIAN_ACCUMULATION[i]['T']=FEI_JIAN[j]['T']+FEI_JIAN_ACCUMULATION[i]['T']
 
-print('\n>>>>>>FEI_JIAN\n',FEI_JIAN)
+#print('\n>>>>>>FEI_JIAN\n',FEI_JIAN)
 print('\n>>>>>>FEI_JIAN_ACCUMULATION\n',FEI_JIAN_ACCUMULATION)
 
 #斋，单骰重摇
@@ -82,7 +82,7 @@ for i in range(0,DICE_COUNT+1):
 	for j in range(i,DICE_COUNT+1):
 		ZAI_TWO_ACCUMULATION[i]['T']=ZAI_TWO[j]['T']+ZAI_TWO_ACCUMULATION[i]['T']
 
-print('\n>>>>>>ZAI_TWO\n',ZAI_TWO)
+#print('\n>>>>>>ZAI_TWO\n',ZAI_TWO)
 print('\n>>>>>>ZAI_TWO_ACCUMULATION\n',ZAI_TWO_ACCUMULATION)
 
 
@@ -102,7 +102,7 @@ for i in range(0,DICE_COUNT+1):
 	for j in range(i,DICE_COUNT+1):
 		FEI_TWO_ACCUMULATION[i]['T']=FEI_TWO[j]['T']+FEI_TWO_ACCUMULATION[i]['T']
 
-print('\n>>>>>>FEI_TWO\n',FEI_TWO)
+#print('\n>>>>>>FEI_TWO\n',FEI_TWO)
 print('\n>>>>>>FEI_TWO_ACCUMULATION\n',FEI_TWO_ACCUMULATION)
 
 
