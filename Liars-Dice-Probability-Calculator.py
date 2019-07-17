@@ -30,6 +30,9 @@ def C(r,n):
 #输入对面玩家数PLAYERS_NUMBER
 PLAYERS_NUMBER = 4
 
+#是否单骰重摇
+CHONG = 1
+
 #计算骰子数 DICE_COUNT = PLAYERS_NUMBER *5
 DICE_COUNT = PLAYERS_NUMBER * 5
 
@@ -65,53 +68,68 @@ for i in range(0,DICE_COUNT+1):
 print('\n>>>>>>FEI_JIAN\n',FEI_JIAN)
 print('\n>>>>>>FEI_JIAN_ACCUMULATION\n',FEI_JIAN_ACCUMULATION)
 
+#斋，单骰重摇
+ZAI_TWO = DF.copy()
+ZAI_TWO_ACCUMULATION = DF.copy()
+
+ZAI_TWO[0]['T'] = 0
+ZAI_TWO[1]['T'] = 0
+for i in range(2,DICE_COUNT+1):
+	ZAI_TWO[i]['T'] = pow(1/6,i-2)*pow(5/6,DICE_COUNT-i) *C(i-2,DICE_COUNT-2)
 
 
-#飞，两人玩，单骰重摇
-FEI_TWO = pd.DataFrame(0.0,index =['T'], columns = range(0,5+1))
-FEI_TWO_ACCUMULATION = FEI_TWO.copy()
+for i in range(0,DICE_COUNT+1):
+	for j in range(i,DICE_COUNT+1):
+		ZAI_TWO_ACCUMULATION[i]['T']=ZAI_TWO[j]['T']+ZAI_TWO_ACCUMULATION[i]['T']
 
+print('\n>>>>>>ZAI_TWO\n',ZAI_TWO)
+print('\n>>>>>>ZAI_TWO_ACCUMULATION\n',ZAI_TWO_ACCUMULATION)
+
+
+
+
+#飞，单骰重摇
+FEI_TWO = DF.copy()
+FEI_TWO_ACCUMULATION = DF.copy()
 
 FEI_TWO[0]['T'] = 0
 FEI_TWO[1]['T'] = 0
-FEI_TWO[2]['T'] = 64/216
-FEI_TWO[3]['T'] = 1/3*pow(2/3,2)*3
-FEI_TWO[4]['T'] = pow(1/3,2)*2/3*3
-FEI_TWO[5]['T'] = pow(1/3,3)
+for i in range(2,DICE_COUNT+1):
+	FEI_TWO[i]['T'] = pow(1/3,i-2)*pow(2/3,DICE_COUNT-i) *C(i-2,DICE_COUNT-2)
 
 
-for i in range(0,5+1):
-	for j in range(i,5+1):
+for i in range(0,DICE_COUNT+1):
+	for j in range(i,DICE_COUNT+1):
 		FEI_TWO_ACCUMULATION[i]['T']=FEI_TWO[j]['T']+FEI_TWO_ACCUMULATION[i]['T']
 
 print('\n>>>>>>FEI_TWO\n',FEI_TWO)
 print('\n>>>>>>FEI_TWO_ACCUMULATION\n',FEI_TWO_ACCUMULATION)
 
 
-if PLAYERS_NUMBER != 1:
-#斋，见骰算骰
-	plt.plot(range(0,DICE_COUNT+1),ZAI_JIAN_ACCUMULATION.loc['T',:],label = '斋，见骰算骰',color= 'g',linestyle='-')
+#见骰算骰
+if CHONG != 1:
 
-#飞，见骰算骰
-	plt.plot(range(0,DICE_COUNT+1),FEI_JIAN_ACCUMULATION.loc['T',:],label = '飞，见骰算骰',color= 'b',linestyle='-')
+	plt.plot(range(0,DICE_COUNT+1),ZAI_JIAN_ACCUMULATION.loc['T',:],label = '斋',color= 'g',linestyle='-')
+	plt.plot(range(0,DICE_COUNT+1),FEI_JIAN_ACCUMULATION.loc['T',:],label = '飞',color= 'b',linestyle='-')
 
-	plt.hlines(1/((PLAYERS_NUMBER+1)),0,PLAYERS_NUMBER*5,label = '均线',color= 'y',linestyle = '--')
-	plt.hlines(1/((PLAYERS_NUMBER+1)*2),0,PLAYERS_NUMBER*5,label = '极限线',color= 'r',linestyle = '--')
+	plt.hlines(0.5,0,PLAYERS_NUMBER*5,label = '50%线',color= 'y',linestyle = '--')
+	plt.hlines(1/((PLAYERS_NUMBER+1)),0,PLAYERS_NUMBER*5,label = '均线',color= 'r',linestyle = '--')
+	plt.hlines(1/((PLAYERS_NUMBER+1)*2),0,PLAYERS_NUMBER*5,label = '极限线',color= 'k',linestyle = '--')
+	plt.title('见骰算骰-骰子概率表')
 
+#单骰重摇
+if CHONG == 1:
 
-#飞，两人玩，单骰重摇
-
-if PLAYERS_NUMBER == 1:
-
-	plt.plot(range(0,DICE_COUNT+1),ZAI_JIAN_ACCUMULATION.loc['T',:],label = '斋，见骰算骰',color= 'g',linestyle='-')
-	plt.plot(range(0,5+1),FEI_TWO_ACCUMULATION.loc['T',:],label = '飞，两人，单骰重摇',color= 'b',linestyle='-')
+	plt.plot(range(0,DICE_COUNT+1),ZAI_TWO_ACCUMULATION.loc['T',:],label = '斋',color= 'g',linestyle='-')
+	plt.plot(range(0,DICE_COUNT+1),FEI_TWO_ACCUMULATION.loc['T',:],label = '飞',color= 'b',linestyle='-')
 	
-	plt.hlines(1/((PLAYERS_NUMBER+1)),0,PLAYERS_NUMBER*5,label = '均线',color= 'y',linestyle = '--')
-	plt.hlines(1/((1+1)*2),0,5,label = '极限线',color= 'r',linestyle = '--')
-
+	plt.hlines(0.5,0,PLAYERS_NUMBER*5,label = '50%线',color= 'y',linestyle = '--')
+	plt.hlines(1/((PLAYERS_NUMBER+1)),0,PLAYERS_NUMBER*5,label = '均线',color= 'r',linestyle = '--')
+	plt.hlines(1/((PLAYERS_NUMBER+1)*2),0,PLAYERS_NUMBER*5,label = '极线',color= 'k',linestyle = '--')
+	plt.title('单骰重摇-骰子概率表')
 
 plt.xlabel('个数')
 plt.ylabel('概率')
-plt.title('骰子概率表')
+
 plt.legend()	#显示图例
 plt.show()
