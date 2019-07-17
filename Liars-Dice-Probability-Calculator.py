@@ -1,5 +1,15 @@
 
-import pandas as pd
+#-- coding: utf-8 --
+import pandas as pd 	#导入数据分析库pandas
+import matplotlib.pyplot as plt #导入画图库
+
+###########设置字体，解决中文字体乱码问题###########
+import matplotlib as mpl
+mpl.rcParams['font.sans-serif']=['SimHei'] #指定默认字体 SimHei为黑体
+mpl.rcParams['axes.unicode_minus']=False #用来正常显示负号
+###########设置字体，解决中文字体乱码问题###########
+
+
 ###########阶乘函数定义###########
 def factorial(n):
     if n==1:
@@ -17,9 +27,8 @@ def C(r,n):
 ###########阶乘函数定义###########
 
 
-
-#输入玩家数PLAYERS_NUMBER
-PLAYERS_NUMBER = 2
+#输入对面玩家数PLAYERS_NUMBER
+PLAYERS_NUMBER = 4
 
 #计算骰子数 DICE_COUNT = PLAYERS_NUMBER *5
 DICE_COUNT = PLAYERS_NUMBER * 5
@@ -58,7 +67,7 @@ print('\n>>>>>>FEI_JIAN_ACCUMULATION\n',FEI_JIAN_ACCUMULATION)
 
 
 
-#飞，两个人玩，单骰重新摇
+#飞，两人玩，单骰重摇
 FEI_TWO = pd.DataFrame(0.0,index =['T'], columns = range(0,5+1))
 FEI_TWO_ACCUMULATION = FEI_TWO.copy()
 
@@ -78,3 +87,31 @@ for i in range(0,5+1):
 print('\n>>>>>>FEI_TWO\n',FEI_TWO)
 print('\n>>>>>>FEI_TWO_ACCUMULATION\n',FEI_TWO_ACCUMULATION)
 
+
+if PLAYERS_NUMBER != 1:
+#斋，见骰算骰
+	plt.plot(range(0,DICE_COUNT+1),ZAI_JIAN_ACCUMULATION.loc['T',:],label = '斋，见骰算骰',color= 'g',linestyle='-')
+
+#飞，见骰算骰
+	plt.plot(range(0,DICE_COUNT+1),FEI_JIAN_ACCUMULATION.loc['T',:],label = '飞，见骰算骰',color= 'b',linestyle='-')
+
+	plt.hlines(1/((PLAYERS_NUMBER+1)),0,PLAYERS_NUMBER*5,label = '均线',color= 'y',linestyle = '--')
+	plt.hlines(1/((PLAYERS_NUMBER+1)*2),0,PLAYERS_NUMBER*5,label = '极限线',color= 'r',linestyle = '--')
+
+
+#飞，两人玩，单骰重摇
+
+if PLAYERS_NUMBER == 1:
+
+	plt.plot(range(0,DICE_COUNT+1),ZAI_JIAN_ACCUMULATION.loc['T',:],label = '斋，见骰算骰',color= 'g',linestyle='-')
+	plt.plot(range(0,5+1),FEI_TWO_ACCUMULATION.loc['T',:],label = '飞，两人，单骰重摇',color= 'b',linestyle='-')
+	
+	plt.hlines(1/((PLAYERS_NUMBER+1)),0,PLAYERS_NUMBER*5,label = '均线',color= 'y',linestyle = '--')
+	plt.hlines(1/((1+1)*2),0,5,label = '极限线',color= 'r',linestyle = '--')
+
+
+plt.xlabel('个数')
+plt.ylabel('概率')
+plt.title('骰子概率表')
+plt.legend()	#显示图例
+plt.show()
