@@ -50,8 +50,7 @@
 如果对方叫4个4，根据‘max概率飞图’，对方只有20.63%的概率存在4个4，可以果断开。（为什么使用‘max概率’？因为叫4个的话，基本可以按自己意愿随心叫）。   
 ####  AAA BB(AAAAB)
 <img src="https://github.com/joinbu/LiarsDice/blob/master/material/6.png" width="40"/><img src="https://github.com/joinbu/LiarsDice/blob/master/material/6.png" width="40"/><img src="https://github.com/joinbu/LiarsDice/blob/master/material/6.png" width="40"/><img src="https://github.com/joinbu/LiarsDice/blob/master/material/3.png" width="40"/><img src="https://github.com/joinbu/LiarsDice/blob/master/material/3.png" width="40"/>      
-<img src="https://github.com/joinbu/LiarsDice/blob/master/material/6.png" width="40"/><img src="https://github.com/joinbu/LiarsDice/blob/master/material/6.png" width="40"/><img src="https://github.com/joinbu/LiarsDice/blob/master/material/6.png" width="40"/><img src="https://github.com/joinbu/LiarsDice/blob/master/material/6.png" width="40"/><img src="https://github.com/joinbu/LiarsDice/blob/master/material/3.png" width="40"/>   
-666 33/6666 3:   
+<img src="https://github.com/joinbu/LiarsDice/blob/master/material/6.png" width="40"/><img src="https://github.com/joinbu/LiarsDice/blob/master/material/6.png" width="40"/><img src="https://github.com/joinbu/LiarsDice/blob/master/material/6.png" width="40"/><img src="https://github.com/joinbu/LiarsDice/blob/master/material/6.png" width="40"/><img src="https://github.com/joinbu/LiarsDice/blob/master/material/3.png" width="40"/>    
 这是典型的带入坑案例，先叫3个6，将对方带入4个2，4个4，4个5的坑。
 #### 11 ABC
 <img src="https://github.com/joinbu/LiarsDice/blob/master/material/1.png" width="40"/><img src="https://github.com/joinbu/LiarsDice/blob/master/material/1.png" width="40"/><img src="https://github.com/joinbu/LiarsDice/blob/master/material/2.png" width="40"/><img src="https://github.com/joinbu/LiarsDice/blob/master/material/4.png" width="40"/><img src="https://github.com/joinbu/LiarsDice/blob/master/material/6.png" width="40"/>   
