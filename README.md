@@ -47,7 +47,11 @@
 ## 实战分析
 ### 我方先叫骰
 #### AAA XX
-555 23:   
+![](https://github.com/joinbu/LiarsDice/blob/master/material/5.png)
+![](https://github.com/joinbu/LiarsDice/blob/master/material/5.png)
+![](https://github.com/joinbu/LiarsDice/blob/master/material/5.png)
+![](https://github.com/joinbu/LiarsDice/blob/master/material/2.png)
+![](https://github.com/joinbu/LiarsDice/blob/master/material/3.png)   
 我方叫 3个5，引诱对方叫3个6，根据‘默认概率飞图’，对方只有23.13%概率存在3个6，因此可以果断开。（为什么需要使用‘
 
 默认概率’？因为对方是被你引诱进入3个6的）。   
@@ -55,13 +59,25 @@
 
 的话，基本可以按自己意愿随心叫）。   
 ####  AAA BB(AAAAB)
+![](https://github.com/joinbu/LiarsDice/blob/master/material/6.png)
+![](https://github.com/joinbu/LiarsDice/blob/master/material/6.png)
+![](https://github.com/joinbu/LiarsDice/blob/master/material/6.png)
+![](https://github.com/joinbu/LiarsDice/blob/master/material/3.png)
+![](https://github.com/joinbu/LiarsDice/blob/master/material/3.png)   
+![](https://github.com/joinbu/LiarsDice/blob/master/material/6.png)
+![](https://github.com/joinbu/LiarsDice/blob/master/material/6.png)
+![](https://github.com/joinbu/LiarsDice/blob/master/material/6.png)
+![](https://github.com/joinbu/LiarsDice/blob/master/material/6.png)
+![](https://github.com/joinbu/LiarsDice/blob/master/material/3.png)   
 666 33/6666 3:   
 这是典型的带入坑案例，先叫3个6，将对方带入4个2，4个4，4个5的坑。
 #### 11 ABC
-11 356   
-先叫3个3，根据对方的叫骰情况，慢慢叫3个5，3个6，4个3等，对方有1个及以上的情况为85.49%，2个及以上的情况也有52.61%
-
-，即使叫上5个，也有52.61%的胜率，而且我方经常变骰，对方会以为我方叫假骰，引诱对方开。
+![](https://github.com/joinbu/LiarsDice/blob/master/material/1.png)
+![](https://github.com/joinbu/LiarsDice/blob/master/material/1.png)
+![](https://github.com/joinbu/LiarsDice/blob/master/material/2.png)
+![](https://github.com/joinbu/LiarsDice/blob/master/material/4.png)
+![](https://github.com/joinbu/LiarsDice/blob/master/material/6.png)   
+先叫3个2，根据对方的叫骰情况，慢慢叫3个2，3个4，4个6等，对方有1个及以上的情况为85.49%，2个及以上的情况也有52.61%，即使叫上5个，也有52.61%的胜率，而且我方经常变骰，对方会以为我方叫假骰，引诱对方开。
 
 ### 对方先叫骰
 默认对方叫真骰和假骰的概率各为50%   
