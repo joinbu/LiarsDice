@@ -59,7 +59,7 @@
 
 的话，基本可以按自己意愿随心叫）。   
 ####  AAA BB(AAAAB)
-<img src="https://github.com/joinbu/LiarsDice/blob/master/material/6.png" style="zoom:50%">
+<img src="https://github.com/joinbu/LiarsDice/blob/master/material/6.png" width="30" alt="6">
 ![](https://github.com/joinbu/LiarsDice/blob/master/material/6.png)
 ![](https://github.com/joinbu/LiarsDice/blob/master/material/6.png)
 ![](https://github.com/joinbu/LiarsDice/blob/master/material/3.png)
