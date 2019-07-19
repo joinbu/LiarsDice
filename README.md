@@ -36,22 +36,22 @@
 ## 概率计算
 ### 默认概率
 对方某点的个数概率分布   
-![](https://github.com/joinbu/LiarsDice/blob/master/2.ONE%20VS%20ONE/%E7%B4%A0%E6%9D%90/ZAI_default.png)
-![](https://github.com/joinbu/LiarsDice/blob/master/2.ONE%20VS%20ONE/%E7%B4%A0%E6%9D%90/FEI_default.png)   
+<img src="https://github.com/joinbu/LiarsDice/blob/master/2.ONE%20VS%20ONE/%E7%B4%A0%E6%9D%90/ZAI_default.png">
+<img src="https://github.com/joinbu/LiarsDice/blob/master/2.ONE%20VS%20ONE/%E7%B4%A0%E6%9D%90/FEI_default.png">   
 
 ### max概率
 对方最多的点数个数概率分布   
-![](https://github.com/joinbu/LiarsDice/blob/master/2.ONE%20VS%20ONE/%E7%B4%A0%E6%9D%90/ZAI_max.png)
-![](https://github.com/joinbu/LiarsDice/blob/master/2.ONE%20VS%20ONE/%E7%B4%A0%E6%9D%90/FEI_max.png)   
+<img src="https://github.com/joinbu/LiarsDice/blob/master/2.ONE%20VS%20ONE/%E7%B4%A0%E6%9D%90/ZAI_max.png" width="40">
+<img src="https://github.com/joinbu/LiarsDice/blob/master/2.ONE%20VS%20ONE/%E7%B4%A0%E6%9D%90/FEI_max.png" width="40">   
 
 ## 实战分析
 ### 我方先叫骰
 #### AAA XX
-![](https://github.com/joinbu/LiarsDice/blob/master/material/5.png)
-![](https://github.com/joinbu/LiarsDice/blob/master/material/5.png)
-![](https://github.com/joinbu/LiarsDice/blob/master/material/5.png)
-![](https://github.com/joinbu/LiarsDice/blob/master/material/2.png)
-![](https://github.com/joinbu/LiarsDice/blob/master/material/3.png)   
+<img src="https://github.com/joinbu/LiarsDice/blob/master/material/5.png" width="40">
+<img src="https://github.com/joinbu/LiarsDice/blob/master/material/5.png" width="40">
+<img src="https://github.com/joinbu/LiarsDice/blob/master/material/5.png" width="40">
+<img src="https://github.com/joinbu/LiarsDice/blob/master/material/2.png" width="40">
+<img src="https://github.com/joinbu/LiarsDice/blob/master/material/3.png" width="40">   
 我方叫 3个5，引诱对方叫3个6，根据‘默认概率飞图’，对方只有23.13%概率存在3个6，因此可以果断开。（为什么需要使用‘
 
 默认概率’？因为对方是被你引诱进入3个6的）。   
@@ -60,23 +60,23 @@
 的话，基本可以按自己意愿随心叫）。   
 ####  AAA BB(AAAAB)
 <img src="https://github.com/joinbu/LiarsDice/blob/master/material/6.png" width="30" alt="6">
-![](https://github.com/joinbu/LiarsDice/blob/master/material/6.png)
-![](https://github.com/joinbu/LiarsDice/blob/master/material/6.png)
-![](https://github.com/joinbu/LiarsDice/blob/master/material/3.png)
-![](https://github.com/joinbu/LiarsDice/blob/master/material/3.png)   
-![](https://github.com/joinbu/LiarsDice/blob/master/material/6.png)
-![](https://github.com/joinbu/LiarsDice/blob/master/material/6.png)
-![](https://github.com/joinbu/LiarsDice/blob/master/material/6.png)
-![](https://github.com/joinbu/LiarsDice/blob/master/material/6.png)
-![](https://github.com/joinbu/LiarsDice/blob/master/material/3.png)   
+<img src="https://github.com/joinbu/LiarsDice/blob/master/material/6.png" width="40">
+<img src="https://github.com/joinbu/LiarsDice/blob/master/material/6.png" width="40">
+<img src="https://github.com/joinbu/LiarsDice/blob/master/material/3.png" width="40">
+<img src="https://github.com/joinbu/LiarsDice/blob/master/material/3.png" width="40">   
+<img src="https://github.com/joinbu/LiarsDice/blob/master/material/6.png" width="40">
+<img src="https://github.com/joinbu/LiarsDice/blob/master/material/6.png" width="40">
+<img src="https://github.com/joinbu/LiarsDice/blob/master/material/6.png" width="40">
+<img src="https://github.com/joinbu/LiarsDice/blob/master/material/6.png" width="40">
+<img src="https://github.com/joinbu/LiarsDice/blob/master/material/3.png" width="40">   
 666 33/6666 3:   
 这是典型的带入坑案例，先叫3个6，将对方带入4个2，4个4，4个5的坑。
 #### 11 ABC
-![](https://github.com/joinbu/LiarsDice/blob/master/material/1.png)
-![](https://github.com/joinbu/LiarsDice/blob/master/material/1.png)
-![](https://github.com/joinbu/LiarsDice/blob/master/material/2.png)
-![](https://github.com/joinbu/LiarsDice/blob/master/material/4.png)
-![](https://github.com/joinbu/LiarsDice/blob/master/material/6.png)   
+<img src="https://github.com/joinbu/LiarsDice/blob/master/material/1.png" width="40">
+<img src="https://github.com/joinbu/LiarsDice/blob/master/material/1.png" width="40">
+<img src="https://github.com/joinbu/LiarsDice/blob/master/material/2.png" width="40">
+<img src="https://github.com/joinbu/LiarsDice/blob/master/material/4.png" width="40">
+<img src="https://github.com/joinbu/LiarsDice/blob/master/material/6.png" width="40">   
 先叫3个2，根据对方的叫骰情况，慢慢叫3个2，3个4，4个6等，对方有1个及以上的情况为85.49%，2个及以上的情况也有52.61%，即使叫上5个，也有52.61%的胜率，而且我方经常变骰，对方会以为我方叫假骰，引诱对方开。
 
 ### 对方先叫骰
