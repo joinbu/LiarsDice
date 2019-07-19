@@ -31,7 +31,7 @@ def C(r,n):
 #2,单骰重摇
 #3,单骰重摇MAX
 TYPE = 0 #是否单骰重摇
-PLAYERS_NUMBER = 2 #输入对面玩家数PLAYERS_NUMBER
+PLAYERS_NUMBER = 1 #输入对面玩家数PLAYERS_NUMBER
 DICE_COUNT = PLAYERS_NUMBER * 5 #计算骰子数 DICE_COUNT = PLAYERS_NUMBER *5
 DF = pd.DataFrame(0.0,index =['T'], columns = range(0,DICE_COUNT+1)) #使用0.0赋值，请勿使用0，否则默认为整型，无法计算小数
 
@@ -102,8 +102,8 @@ print('\n>>>>>>FEI_JIAN_MAX_ACCUMULATION\n',FEI_JIAN_MAX_ACCUMULATION)
 ZAI_TWO = DF.copy()
 ZAI_TWO_ACCUMULATION = DF.copy()
 
-ZAI_TWO[0]['T'] = 0
-ZAI_TWO[1]['T'] = 5300/7056
+ZAI_TWO[0]['T'] = 3005/7056
+ZAI_TWO[1]['T'] = 2525/7056
 ZAI_TWO[2]['T'] = 1250/7056
 ZAI_TWO[3]['T'] = 250/7056
 ZAI_TWO[4]['T'] = 25/7056
@@ -120,8 +120,8 @@ print('\n>>>>>>ZAI_TWO_ACCUMULATION\n',ZAI_TWO_ACCUMULATION)
 FEI_TWO = DF.copy()
 FEI_TWO_ACCUMULATION = DF.copy()
 
-FEI_TWO[0]['T'] = 0
-FEI_TWO[1]['T'] = 3344/7056
+FEI_TWO[0]['T'] = 1024/7056
+FEI_TWO[1]['T'] = 2320/7056
 FEI_TWO[2]['T'] = 2080/7056
 FEI_TWO[3]['T'] = 1280/7056
 FEI_TWO[4]['T'] = 320/7056
