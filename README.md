@@ -36,11 +36,11 @@
 ## 概率计算
 ### 默认概率
 对方某点的个数概率分布   
-<img src="https://github.com/joinbu/LiarsDice/blob/master/2.ONE%20VS%20ONE/%E7%B4%A0%E6%9D%90/ZAI_default.png">   <img src="https://github.com/joinbu/LiarsDice/blob/master/2.ONE%20VS%20ONE/%E7%B4%A0%E6%9D%90/FEI_default.png">   
+<img src="https://github.com/joinbu/LiarsDice/blob/master/2.ONE%20VS%20ONE/%E7%B4%A0%E6%9D%90/ZAI_default.png">       <img src="https://github.com/joinbu/LiarsDice/blob/master/2.ONE%20VS%20ONE/%E7%B4%A0%E6%9D%90/FEI_default.png">   
 
 ### max概率
 对方最多的点数个数概率分布   
-<img src="https://github.com/joinbu/LiarsDice/blob/master/2.ONE%20VS%20ONE/%E7%B4%A0%E6%9D%90/ZAI_max.png">   <img src="https://github.com/joinbu/LiarsDice/blob/master/2.ONE%20VS%20ONE/%E7%B4%A0%E6%9D%90/FEI_max.png">   
+<img src="https://github.com/joinbu/LiarsDice/blob/master/2.ONE%20VS%20ONE/%E7%B4%A0%E6%9D%90/ZAI_max.png">       <img src="https://github.com/joinbu/LiarsDice/blob/master/2.ONE%20VS%20ONE/%E7%B4%A0%E6%9D%90/FEI_max.png">   
 
 ## 实战分析
 ### 我方先叫骰
