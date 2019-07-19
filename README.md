@@ -32,5 +32,6 @@
 
 ## 概率计算
 ### 默认概率
-某个骰子个数的概率
 ![](https://github.com/joinbu/LiarsDice/blob/master/2.ONE%20VS%20ONE/%E7%B4%A0%E6%9D%90/ZAI_default.png)
+![](https://github.com/joinbu/LiarsDice/blob/master/2.ONE%20VS%20ONE/%E7%B4%A0%E6%9D%90/FEI_default.png)
+
